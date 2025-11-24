@@ -1,0 +1,22 @@
+pipeline:
+  name: test-10
+  identifier: test10
+  projectIdentifier: AdithyaTest
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: ffr
+        identifier: ffr
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: Wait
+                  name: Wait_1
+                  identifier: Wait_1
+                  spec:
+                    duration: 10m
+        tags: {}
